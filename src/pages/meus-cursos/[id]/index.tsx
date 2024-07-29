@@ -8,6 +8,7 @@ import {
   unidade_ensino,
 } from "@prisma/client";
 import { AccordionUnidades } from "@/components/meus-cursos/accordion-unidades";
+import SuportChat from "@/components/meus-cursos/SuportChat";
 
 export interface TopicoWithRelations extends topico {
   id: string;
@@ -77,6 +78,8 @@ export default function Details() {
         <div className="w-5/6 p-4">
           <p>teste</p>
           <p>id do objeto: {selectedObject}</p>
+
+          <SuportChat />
         </div>
       </div>
     </>
